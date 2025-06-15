@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(to bottom, #5dade2, #bfebfd);
+    height: 100%; 
+}
+img{
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color:#C70039;
+}
+
+h3{
+    color:#FF5733
+}
+h5{
+    color: #196f3d;
+}
+p{
+    font-size: 18px;
+    color:#014fec 
+}
+ul{
+    font-size: 20px;
+    color: #a901ec;
+}
