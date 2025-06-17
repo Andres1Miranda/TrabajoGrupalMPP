@@ -2,8 +2,9 @@ body{
     background: linear-gradient(to bottom, #5dade2, #bfebfd);
     height: 100%; 
 }
-img{
-    align-items: center;
+.img-centro{
+    margin: 10px auto 10px;
+    display: block;
 }
 h1{
     font-size: 50px;
@@ -19,7 +20,8 @@ h5{
 }
 p{
     font-size: 18px;
-    color:#014fec 
+    color:#014fec;
+    margin-top: 50px;
 }
 ul{
     font-size: 20px;
