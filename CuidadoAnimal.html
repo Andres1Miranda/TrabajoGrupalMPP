@@ -1,118 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUIDADOS EN ANIMALES</title>
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comic Interactivo: Cuidado Animal</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #ffcc00;
+      text-align: center;
+      padding: 30px;
+      border-bottom: 6px dashed #333;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      background: #fff3b0;
+      padding: 15px;
+    }
+
+    nav button {
+      font-size: 1.1rem;
+      margin: 10px;
+      padding: 12px 25px;
+      border: 3px solid #333;
+      background: #ffeb3b;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #ffe600;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .seccion {
+      display: none;
+    }
+
+    .seccion.activa {
+      display: block;
+    }
+
+    .comic {
+      background: #fff;
+      border: 5px double #000;
+      padding: 25px;
+      margin: 30px 0;
+      border-radius: 20px;
+      box-shadow: 7px 7px #333;
+    }
+
+    .comic img {
+      max-width: 100%;
+      border: 4px solid #000;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .comic p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #ffcc00;
+      text-align: center;
+      padding: 15px;
+      border-top: 6px dashed #333;
+    }
+  </style>
 </head>
 <body>
-   <h1>CUIDADOS DE PERROS - GATOS - GANADO VACUNO</h1>
-   <img src="src/665f0461a9ae0.webp"  width="500" height="">
-  <p>
-    <b> EL CUIDADO DE LOS ANIMALES ABARCA DIVERSAS AREAS, DESDE LA ALIMENTACION Y ALOJAMIENTOS ADECUADOS HASTA <br>
-    LA ATENCION VETERINARIA PREVENTIVA Y LA SOCIALIZACION.ES FUNDAMENTAL PROPORCIONARLES UN AMBIENTE SEGURO Y <br>
-    ENRIQUESEDOR Y ENRIQUESEDOR, ASI COMO CUBRIR SUS NECESIDADES NUTRICIONALES, EMOCIONALES Y DE SALUD. ESTO <br>
-    INCLUYE VACUNACION,DESPARACITACIONES, HIGIENE, EJERCICIO Y ATENCION VETERINARIA REGULAR.</b>
-  </p>
+  <header>
+    <h1>🐾 Comic Interactivo: Cuidado Animal</h1>
+    <p>¡Explora el mundo de los animales y aprende cómo cuidarlos!</p>
+  </header>
 
-  <h2>Perros de razas pequeñas (menos de 10 kg)</h2>
-   <img src="src/crem.jpg" width="500">
-  <p>Ejemplos: Chihuahua, Pomerania, Yorkshire Terrier, Bichón Maltés <br>
-Características: <br>
-*Larga esperanza de vida (hasta 18 años). <br>
-*Metabolismo rápido: quieren más calorías por kilo. <br>
-*Mayor sensibilidad al frío y propensión a problemas dentales.</p>
-<p>Cuidados esenciales: <br>
-   *Ejercicio: Paseos cortos y juegos diarios para evitar el sobrepeso. <br>
-   *Higiene: Cepillado regular, especialmente en razas de pelo largo atención a la higiene bucal para prevenir acumulación de sarro. <br>
-   *Salud: Visitas veterinarias periódicas para chequeos y vacunación cuidado especial en climas fríos </p>
-</h3>
-  <h3>Perros de razas medianas (10-25 kg)</h3>
-  <img src="src/jswlñde.jpg" width="500">
-  <p>Ejemplos: Beagle, Border Collie, Bulldog, Cocker Spaniel. <br>
-*Características: <br>
-*Equilibrio entre energía y manejabilidad. <br>
-*Necesitan ejercicio moderado y estimulación mental.</p>
-  <p>Cuidados esenciales: <br>
-   *Ejercicio: Actividad física diaria, como paseos y juegos interactivos. <br>
-   *Higiene: Cepillado según el tipo de pelaje; limpieza regular de oídos y dientes. <br>
-   *Salud: Socialización desde temprana edad; chequeos veterinarios regulares.</p>
+  <nav>
+    <button onclick="mostrarSeccion('perros')">🐶 Perros</button>
+    <button onclick="mostrarSeccion('gatos')">🐱 Gatos</button>
+    <button onclick="mostrarSeccion('terneros')">🐄 Terneros</button>
+  </nav>
 
-  <h3> Perros de razas grandes (más de 25 kg)</h3>
-  <img src="src/ytp.jpg" width="500">
-  <p>Ejemplos: Labrador Retriever, Pastor Alemán, Gran Danés, Rottweiler. <br>
-   *Características: <br>
-   *Crecimiento rápido; propensos a problemas articulares. <br>
-   *Necesitan espacio y ejercicio regular.</p>
-  <p>Cuidados esenciales: <br>
-*Ejercicio: Actividad física moderada; evitar ejercicios intensos en cachorros para prevenir daños articulares. <br>
-*Higiene: Cepillado frecuente para mantener el pelaje limpio; baños según necesidad. <br>
-*Salud: Control de peso; chequeos veterinarios para detectar displasia de cadera u otros problemas comunes en razas grandes.</p> 
-  <h2>Consejos generales de higiene y salud</h2>
-<p>*Baños: Frecuencia según el tipo de pelaje y estilo de vida; evitar baños excesivos para no eliminar aceites naturales de la piel. <br>
-*Cepillado: Regular para prevenir nudos y mantener la piel saludable. <br>
-*Higiene bucal: Cepillado dental y uso de juguetes masticables para prevenir enfermedades periodontales. <br>
-*Visitas al veterinario: Chequeos regulares, vacunación y desparasitación según el calendario recomendado.</h2>
+  <main>
+    <!-- PERROS -->
+    <section id="perros" class="seccion activa">
+      <h2>🐶 Cuidado de Perros</h2>
+      <div class="comic">
+        <img src="src/medicamento_perro.jpeg" alt="Perros felices">
+        <p><strong>Razas pequeñas:</strong> Son muy cariñosos, ideales para espacios reducidos. Necesitan paseos cortos, buena higiene dental, abrigo en clima frío y evitar saltos altos que dañen su columna.</p>
+        <p><strong>Razas medianas:</strong> Necesitan ejercicio diario, socialización temprana y chequeos frecuentes. Son equilibrados, ideales para familias.</p>
+        <p><strong>Razas grandes:</strong> Requieren grandes espacios, alimentación rica en proteínas, prevención de displasia de cadera y atención veterinaria constante. ¡Crecen muy rápido!</p>
+        <p><strong>Cuidados generales:</strong> Agua fresca, cepillado según tipo de pelo, vacunas al día, desparasitación, corte de uñas y visitas al veterinario cada 6 meses.</p>
+      </div>
+    </section>
 
-  <h4>Gatos pequeños (< 5 kg)</h4>
-<img src="src/Gato-Singapura-1200x900.jpg" width="500">
-  <p>Ejemplos comunes: Singapura, Devon Rex, Peterbald (sin pelo).<br>
-Alimentación:<br> 
-*Necesitan dietas densas en calorías y proteínas especialmente razas sin pelo como el Peterbald, que pierden calor corporal rápidamente. <br>
-*Pequeñas raciones varias veces al día (2‑5 tomas) para adaptar su metabolismo </p><br>
+    <!-- GATOS -->
+    <section id="gatos" class="seccion">
+      <h2>🐱 Cuidado de Gatos</h2>
+      <div class="comic">
+        <img src="src/medicamento_gato.jpeg" alt="Gatos saludables">
+        <p><strong>Ambiente limpio:</strong> Necesitan un hogar tranquilo, lugares altos, escondites y una caja de arena siempre limpia. Los gatos son territoriales y se estresan fácilmente.</p>
+        <p><strong>Alimentación:</strong> Comida de calidad, agua fresca diaria y evitar sobras humanas. Algunos gatos prefieren beber en movimiento, como con fuentes automáticas.</p>
+        <p><strong>Juegos y salud:</strong> Juguetes, rascadores y tiempo de juego diario previenen el estrés y el sobrepeso. Es importante mantenerlos vacunados, esterilizados y llevarlos al veterinario una vez al año.</p>
+        <p><strong>Amor felino:</strong> Cada gato tiene su carácter. Algunos son independientes, otros muy cariñosos. ¡Dales cariño sin invadir su espacio!</p>
+      </div>
+    </section>
 
-<p>Ejercicio y estimulación:<br>
-*Activos e independientes, disfrutan de juguetes, rascadores y alturas para explorar y moverse.<br>
-Higiene: <br>
-*Pelos cortos requieren cepillado semanal. <br>
-*Razas sin pelo: baño semanal para eliminar aceites, especialmente en Peterbald <br>
-*Corte de uñas y limpieza dental regularmente</p>
+    <!-- TERNEROS -->
+    <section id="terneros" class="seccion">
+      <h2>🐄 Cuidado de Terneros</h2>
+      <div class="comic">
+        <img src="src/medicamento_vaca.jpeg" alt="Terneros sanos">
+        <p><strong>Primeras 24 horas:</strong> Es esencial que reciban calostro en las primeras 2 horas de vida para adquirir defensas. Hay que secarlos bien, desinfectar el ombligo y darles calor.</p>
+        <p><strong>Primera semana:</strong> Deben estar en un lugar seco, limpio y ventilado. Su alimentación se basa en leche o sustituto lácteo y agua limpia. Se les puede dar pequeñas cantidades de heno y concentrado a partir del 5.º día.</p>
+        <p><strong>Hasta el destete:</strong> La desparasitación, vacunación y vigilancia del crecimiento son claves. Deben acostumbrarse gradualmente a alimentos sólidos para desarrollar su rumen.</p>
+        <p><strong>Entorno:</strong> Es fundamental evitar el estrés, mantenerlos limpios y vigilados. La socialización progresiva con otros terneros mejora su comportamiento adulto.</p>
+      </div>
+    </section>
+  </main>
 
-<h5>Gatos medianos (5–7 kg)</h5>
-<img src="src/download.jpg" width="500">
-<p>Ejemplos comunes: British Shorthair, American Shorthair, la mayoría de gatos mestizos. <br>
-Alimentación: <br>
-*Piensos balanceados y húmedos para prevenir problemas urinarios y renales <br>
-*Control individual de toma de pienso para evitar sobrepeso </p><br>
+  <footer>
+    <p>CuidadoAnimal Hecho con ❤️ y ternura para todos los cuidadores del mundo.</p>
+  </footer>
 
-<p>Ejercicio y entorno: <br>
-*Disfrutan de zonas seguras para trepar, esconderse y dormir <br>
-Higiene: <br>
-*Cepillado semanal (más frecuente en mudas), limpieza de caja de arena diaria <br>
-*Cortes de uñas y cuidado dental como en los gatos pequeños <br>
-Salud: <br>
-*Chequeos veterinarios anuales. <br>
-*Interiores sin acceso al exterior prolongan la esperanza de vida y reducen el riesgo de enfermedades <br></p>
-
-  <h3>Cuidado Integral de Terneros</h3>
-  <img src="src/medicamento_vaca.jpeg" width="500">
-  <p>El cuidado de los terneros es una tarea esencial dentro de la producción ganadera, ya que de su adecuado manejo depende la futura <br>
-    productividad y salud del ganado adulto. A continuación, se detalla un plan completo de atención y cuidados que debe recibir un ternero <br>
-    desde el momento del nacimiento.</p>
-
-  <h3>Cuidado al Nacer</h3>
-  <p>Los primeros minutos de vida son críticos para la supervivencia del ternero. Se deben seguir los siguientes pasos: <br>
-*Limpieza y secado: Apenas nace, el ternero debe ser secado con un trapo limpio o paja para evitar la pérdida de calor. <br>
-*Este proceso también estimula la circulación sanguínea. <br>
-*Eliminación de mucosidades: Limpiar boca y fosas nasales para facilitar la respiración. <br>
-*Desinfección del ombligo: Se debe aplicar yodo o un desinfectante específico para evitar infecciones</p>
-
-  <h3>Suministro de Calostro</h3>
-  <p>*Importancia: El calostro es la primera leche materna rica en anticuerpos. Se debe suministrar al ternero en las primeras <br>
-     2 horas de vida y durante las primeras 24 horas. <br>
-*Cantidad recomendada: Entre 3 y 4 litros en las primeras tomas. <br>
-*Método: Directamente de la madre o por biberón en caso de que no pueda mamar. </p>
-
-  <h3>Alojamiento del Ternero</h3>
-  <p>*Espacio limpio y seco: El lugar debe estar bien ventilado, protegido del viento, la lluvia y el sol directo. <br>
-*Camas de paja o viruta seca: Cambiar regularmente para mantener la higiene. <br>
-*Separación de adultos: Evitar que el ternero tenga contacto directo con otros animales adultos para reducir riesgos de contagio de enfermedades.</p>
-
-  <h2> Salud Preventiva </h2>
-
-  <p>*Desparasitación: Aplicar antiparasitarios internos y externos bajo supervisión veterinaria. <br>
- *Vacunación: Iniciar con vacunas básicas recomendadas por el veterinario, como contra la fiebre aftosa, diarrea viral bovina, brucelosis y clostridiosis. <br>
- *Observación diaria: Verificar signos de enfermedad como fiebre, diarrea, falta de apetito o debilidad. <br> </p>
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(sec => sec.classList.remove('activa'));
+      document.getElementById(id).classList.add('activa');
+    }
+  </script>
 </body>
 </html>
+    
